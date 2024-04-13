@@ -7,15 +7,10 @@ import time
 from dotenv import load_dotenv
 import sqlite3
 import hashlib
-import requests
-from io import BytesIO
 import signal
 from concurrent.futures import ThreadPoolExecutor
 from logging.handlers import RotatingFileHandler
 import chromadb
-import json
-import numpy as np
-
 import mlx_clip
 
 

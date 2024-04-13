@@ -1,22 +1,15 @@
-import hashlib
-import json
 import logging
 import os
-import requests
 import random
 import signal
 import socket
 import sqlite3
-import time
 import uuid
-from concurrent.futures import ThreadPoolExecutor
 from dotenv import load_dotenv
-from flask import jsonify, g, send_file
+from flask import g, send_file
 from flask import Flask, render_template, request, redirect, url_for
 from io import BytesIO
 from logging.handlers import RotatingFileHandler
-import msgpack
-import numpy as np
 import chromadb
 from PIL import Image, ImageOps
 import mlx_clip
